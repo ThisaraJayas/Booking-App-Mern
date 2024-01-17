@@ -35,7 +35,7 @@ router.post("/register",[
             secure: process.env.NODE_ENV==="production",
             maxAge: 86400000, //1 day in ms
         })
-        return res.sendStatus(200)
+        return res.status(200).send({message:"User Registered Ok"})
     }catch(error){
         console.log(error);
         res.status(500).json({message:"Something Went Wrong"})
