@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom'
 import Layout from './Layouts/Layout'
 import Register from './pages/Register'
+import Signin from './pages/Signin'
 
 
 function App() {
@@ -17,6 +18,10 @@ function App() {
 
       <Route path='/register' element={<Layout>
         <Register/>
+      </Layout>}/>
+
+      <Route path='/sign-in' element={<Layout>
+        <Signin/>
       </Layout>}/>
     </Routes>
   )
