@@ -16,10 +16,7 @@ app.use(express.json())  //convert body to json
 app.use(express.urlencoded({extended:true}))
 
 //access cookie in frontend terminal storage icon (over cookie is stored there)
-app.use(cors({
-    origin: process.env.FRONTEND_URL,
-    credentials:true
-}))
+app.use(cors())
 
 app.use(express.static(path.join(__dirname, "../../frontend/dist")))
 
