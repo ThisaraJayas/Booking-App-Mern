@@ -17,7 +17,7 @@ app.use(express.urlencoded({extended:true}))
 
 //access cookie in frontend terminal storage icon (over cookie is stored there)
 app.use(cors({
-    origin: 'https://mern-booking-app-h5w9.onrender.com',
+    origin: process.env.FRONTEND_URL,
     credentials:true
 }))
 
