@@ -14,6 +14,7 @@ function App() {
 
   return (
     <Routes>
+      <meta name="google-adsense-account" content="ca-pub-7741658003653293">
       <Route path='/' element={<Layout>
         <p>Home Page</p>
       </Layout>}/>
